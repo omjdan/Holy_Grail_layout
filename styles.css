@@ -1,7 +1,54 @@
 * {
-    margin: 0px;
+    margin: 2px;
 }
 
-ul {
-    list-style-type: none;
+body {
+    font-size: 24px;
+    color: whitesmoke;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-header {
+    background-color: black;
+    padding: 3rem 0rem;
+}
+
+.flex-main {
+    display: flex;
+    flex: 1;
+}
+
+
+.flex-nav {
+    background-color: blue;
+    padding: 3rem 0rem;
+    flex: 1 1 3rem;
+}
+
+.flex-article {
+    background-color: orange;
+    padding: 3rem 0rem;
+    flex: 3 3 ;
+}
+
+.flex-aside {
+    background-color: yellowgreen;
+    padding: 3rem 0rem;
+    flex: 1 1 5rem;
+}
+
+
+.flex-footer {
+    background-color: magenta;
+    padding: 3rem 0rem;
+}
+
+@media all and (max-width: 540px){
+    .flex-main {
+        flex-direction: column;
+    
+    }
 }
